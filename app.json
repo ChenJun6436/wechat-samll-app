@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/find/find",
+    "pages/user/user",
+    "pages/exit/exit"
+  ],
+  "window":{
+   "backgroundColor":"#fff",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color":"#d6d5d6",
+    "selectedColor":"#0dc441",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "国内",
+      "iconPath":"imgs/news.png",
+      "selectedIconPath":"imgs/news.png"
+    }, {
+      "pagePath": "pages/find/find",
+      "text": "国际",
+      "iconPath":"imgs/globe.png",
+       "selectedIconPath":"imgs/globe.png"
+    }, {
+      "pagePath": "pages/1/1",
+      "text": "军事",
+      "iconPath":"imgs/army.png",
+       "selectedIconPath":"imgs/army.png"
+    }, {
+      "pagePath": "pages/user/user",
+      "text": "娱乐",
+      "iconPath":"imgs/panel.png",
+       "selectedIconPath":"imgs/panel.png"
+    }, {
+      "pagePath": "pages/exit/exit",
+      "text": "体育",
+      "iconPath":"imgs/sports.png",
+      "selectedIconPath":"imgs/sports.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

@@ -1,0 +1,117 @@
+/**index.wxss**/
+
+.toptop{
+  position: fixed;
+  height: 140rpx;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+.header{
+  height: 80rpx;
+  background-color: #1abcaa;
+  color: #e3e9b7;
+  position: relative;
+  font-size: 30rpx;
+}
+.h-tap{
+  position: absolute;
+  top:0;
+  left: 50%;
+  margin-left:-200rpx;
+  height: 59rpx;
+  line-height: 59rpx; 
+  width: 400rpx;
+  border: 2px solid #fff;
+  border-radius: 100rpx;
+}
+.search{
+  width: 300rpx;
+  margin-left: 50rpx;
+  display: inline-block;
+}
+.search-icon{
+  width: 40rpx;
+  height: 40rpx
+}
+
+.h-active{
+  background-color: #64d985;
+  color: #ffffff;
+}
+.nav{
+  height: 70rpx;
+  font-size: 30rpx;
+  color: #c1c1c1;
+  display: flex;
+  line-height: 70rpx;
+  border-bottom: 1rpx solid #e3e4e4;
+  background-color: rgba(255, 255, 255, .95)
+}
+.n-list{
+  display: block;
+  width: 33%;
+  text-align: center;
+}
+.n-active{
+  color: #0dc441;
+  border-bottom: 5rpx solid #0dc441;
+}
+
+
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1000rpx;
+  padding-top: 150rpx;
+
+}
+.swiper1{
+  
+}
+.listbox{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.listone{
+  height: 350rpx;
+  width: 100%;
+  border-bottom: 1px solid #c1c1c1;
+}
+.listimg{
+  width: 50%;
+  height: 280rpx;
+  float: left;
+}
+.listtitle{
+  height: 50rpx;
+  display: block;
+  text-indent: 20rpx;
+  line-height: 50rpx;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.listdes{
+  display: block;
+  overflow: hidden;
+  line-height: 40rpx;
+  font-size:  30rpx;
+  text-indent: 60rpx;
+  width: 40%;
+  height: 280rpx;
+  padding-left:30rpx;
+}
+.fecthtop{
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  
+}

@@ -1,0 +1,73 @@
+<!--index.wxml-->
+
+<view class="toptop">
+  <view class="header">
+    <view class="h-tap">
+      <input class='search' placeholder="输入关键字" focus="{{focus}}" />
+      <icon class='search-icon' type="search" size="18"/>
+    </view>
+  </view>
+  <view class="nav">
+    <text bindtap="navtap" class="n-list {{swiperIndex==index?'n-active':''}}" wx:for="{{navlist}}" data-indx='{{index}}'>{{item}}</text>
+  </view>
+</view>
+
+<view class="mainCon">
+
+  <swiper class='main' bindchange="changeSwiper" current="{{swiperIndex}}" >
+       
+      <swiper-item >
+      <scroll-view scroll-y="true" style="height: 1000rpx;" bindscrolltoupper="topfecth" scroll-top='{{scrolltop}}' scroll-with-animation bindscrolltolower="botfecth">
+      
+        <view class="listbox">
+        <button loading class='fecthtop'>正在加载</button>
+          <view class="listone" wx:for="{{list}}">
+            <view >
+            <text class='listtitle'>{{item.title}}</text>
+              <image class="listimg" mode='scaleToFill' src="{{item.img}}"></image>
+               <text class='listdes'>{{item.des}}</text>
+            </view>
+          </view>
+          <button class='fecthbot' bindtap="clickbot">点击加载更多</button>
+        </view>
+        
+        </scroll-view>
+      </swiper-item>
+       <swiper-item >
+      <scroll-view scroll-y="true" style="height: 1000rpx;" bindscrolltoupper="topfecth" scroll-top='{{scrolltop}}' scroll-with-animation bindscrolltolower="botfecth">
+      
+        <view class="listbox">
+        <button loading class='fecthtop'>正在加载</button>
+          <view class="listone" wx:for="{{list}}">
+            <view >
+            <text class='listtitle'>{{item.title}}</text>
+              <image class="listimg" mode='scaleToFill' src="{{item.img}}"></image>
+               <text class='listdes'>{{item.des}}</text>
+            </view>
+          </view>
+          <button class='fecthbot' bindtap="clickbot">点击加载更多</button>
+        </view>
+        
+        </scroll-view>
+      </swiper-item>
+       <swiper-item >
+      <scroll-view scroll-y="true" style="height: 1000rpx;" bindscrolltoupper="topfecth" scroll-top='{{scrolltop}}' scroll-with-animation bindscrolltolower="botfecth">
+      
+        <view class="listbox">
+        <button loading class='fecthtop'>正在加载</button>
+          <view class="listone" wx:for="{{list}}">
+            <view >
+            <text class='listtitle'>{{item.title}}</text>
+              <image class="listimg" mode='scaleToFill' src="{{item.img}}"></image>
+               <text class='listdes'>{{item.des}}</text>
+            </view>
+          </view>
+          <button class='fecthbot' bindtap="clickbot">点击加载更多</button>
+        </view>
+        
+        </scroll-view>
+      </swiper-item>
+  
+  </swiper>
+
+</view>
